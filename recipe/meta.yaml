@@ -1,6 +1,6 @@
 {% set provider = "opensearch" %}
 {% set goname = "github.com/opensearch-project/terraform-provider-"+provider.lower() %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: afe4bd54c129c9aa8ece91ad3296263e843d856bf9468801b4e015af1c807fbd
+  sha256: 043fc25ea04533b0e471f9cb04ad928e4cc28aaedc3d398d6cc0313125299ed1
 
 build:
   number: 0
